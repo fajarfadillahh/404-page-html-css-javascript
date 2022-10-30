@@ -39,6 +39,16 @@ html {
   height: 100%;
   background-color: var(--container-color);
   scroll-behavior: smooth;
+
+  // dark mode
+  &.dark {
+    --container-color: #161513;
+    --text-color: #dfaa4e;
+
+    .home__footer {
+      color: var(--text-color);
+    }
+  }
 }
 
 body {
