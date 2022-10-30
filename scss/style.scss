@@ -46,8 +46,25 @@ html {
     --container-color: #161513;
     --text-color: #dfaa4e;
 
+    .header {
+      &__link {
+        color: #161513;
+      }
+
+      @media screen and (min-width: 767px) {
+        &__link {
+          color: #dfaa4e;
+        }
+      }
+    }
+
     .home__footer {
       color: var(--text-color);
+    }
+
+    ::selection,
+    .button {
+      color: #161513;
     }
   }
 }
