@@ -254,3 +254,51 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__title {
+    font-size: 48px;
+  }
+}
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: row;
+    }
+
+    &__link {
+      color: var(--text-color);
+    }
+
+    &__theme {
+      position: static;
+    }
+
+    &__button {
+      margin-top: 0;
+      background-color: var(--text-color);
+      color: #fff;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
